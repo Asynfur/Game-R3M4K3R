@@ -1,7 +1,7 @@
 var Jimp = require('jimp')
 module.exports = {
   name: 'fire',
-  description: '<',
+  description: 'What is this? Better burn it',
   category: 'Image',
   run(client, message, args, Discord){
     const userm = message.mentions.users.first() || client.users.find(u => u.username.toLowerCase() === args.join(" ").toLowerCase()) || client.users.find(u => u.tag.toLowerCase() === args.join(" ").toLowerCase()) || message.author
@@ -11,8 +11,8 @@ module.exports = {
       const avatar1 = images[1];
       const bob = images[0];
       avatar1.resize(640, 740);
-      bob.resize(170, 200);
-      avatar1.composite(bob, 70, 50);
+      bob.resize(175, 230);
+      avatar1.composite(bob, 65, 70);
         avatar1.getBuffer(Jimp.MIME_PNG, (err, buffer) => {
           const img = new Discord.Attachment(buffer, 'esponjebob.png');
            message.channel.send(img)
