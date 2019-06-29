@@ -13,12 +13,29 @@ The project has a GNU license, to invalidate any type of plagiarism. Thank you v
 
 ## The categories that this bot has are:
 
-- Settings
-- Economy
-- Fair
-- Text
-- Image
-- Interaction
+- **Settings**
+
+![](https://github.com/Asynfur/Game-R3M4K3R/blob/glitch/assests/settings%20example.png)
+
+- **Economy**
+
+![](https://github.com/Asynfur/Game-R3M4K3R/blob/glitch/assests/economy%20example.png)
+
+- **Fair**
+
+![](https://github.com/Asynfur/Game-R3M4K3R/blob/glitch/assests/fair%20example.png)
+
+- **Text**
+
+![](https://github.com/Asynfur/Game-R3M4K3R/blob/glitch/assests/text%20example.png)
+
+- **Image**
+
+![](https://github.com/Asynfur/Game-R3M4K3R/blob/glitch/assests/ueu.png)
+
+- **Interaction**
+
+![](https://github.com/Asynfur/Game-R3M4K3R/blob/glitch/assests/poke%20image.png)
 
 Any questions, bug, or report to the bot, can be reported on our official server below. Thank you very much for using Game R3M4K3!
 
