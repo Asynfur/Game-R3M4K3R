@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <title>HackWeekBOT</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+<link href="https://modesta.alexflipnote.dev/css/modesta.min.css" type="text/css" rel="stylesheet">
+  </head>
+  <body>
+<div class="nav-container">
+  <span id="menu-icon"></span>
+
+  <h1 class="nav-title">HackWeekBOT</h1>
+  <div id="navside" class="sidenav">
+    <a href="/panel"><%=username%>'s Panel</a>
+    <a href="https://discord.gg/PpvyCYX">Support Server</a>
+    <a href="/logout">Log out</a>
+  </div>
+  <script>
+    var navside = document.getElementById('navside');
+    document.getElementById("menu-icon").onclick = function() { navside.style.transform = "translateX(0)"; }
+    document.addEventListener("click", function(event) {
+      if (event.target.closest(".nav-container")) return;
+      navside.style.transform = "translateX(-250px)";
+    });
+  </script>
+</div>
+<div class="form-container">
+<form id="tableForm" method="POST" class="selectform" action="/panel/guilds/<%=cguildid%>/bot">
+    <div class="row">
+      <div class="one-half column">
+        <label for="customprefix">Custom Prefix</label>
+        <input class="full-width" placeholder="<%=prefix%>" id="prefix" name="prefix">
+        <label for="botname">BOT Username</label>
+        <input class="full-width" placeholder="<%=botname%>" id="botname" name="botname">
+          <button type="submit" id="rolebtn" class="btn animation discord">Save</button>
+      </div>
+  </form>
+</div>
+  </body>
+</html>

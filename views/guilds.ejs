@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <title>HackWeekBOT</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+ <link href="https://modesta.alexflipnote.dev/css/modesta.min.css" type="text/css" rel="stylesheet">
+    </head>
+  <body>
+<div class="nav-container">
+  <span id="menu-icon"></span>
+
+  <h1 class="nav-title">HackWeekBOT</h1>
+  <div id="navside" class="sidenav">
+    <a href="/panel"><%=username%>'s Panel</a>
+    <a href="https://discord.gg/PpvyCYX">Support Server</a>
+    <a href="/logout">Log out</a>
+  </div>
+  <script>
+    var navside = document.getElementById('navside');
+    document.getElementById("menu-icon").onclick = function() { navside.style.transform = "translateX(0)"; }
+    document.addEventListener("click", function(event) {
+      if (event.target.closest(".nav-container")) return;
+      navside.style.transform = "translateX(-250px)";
+    });
+  </script>
+</div>
+  <section class="fullscreen" style="background-color: transparent;">  
+    <section class="card-container">
+        <% for (var i = 0; i < guilds.length; i++) { %>
+      <div class="card">
+        <div class="avatar">
+            <img src="https://cdn.discordapp.com/icons/<%=guilds[i].id%>/<%=guilds[i].icon%>">
+          </div>
+        <h1 class="title"><%= guilds[i].name %></h1>
+        <p class="description"><a href="/panel/guilds/<%=guilds[i].id%>">Manage Guild</a></p>
+        </div>
+        <% } %>
+      </section>
+    </section>
+  </body>
+</html>
