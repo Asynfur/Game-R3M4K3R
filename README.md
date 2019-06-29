@@ -37,6 +37,22 @@ The project has a GNU license, to invalidate any type of plagiarism. Thank you v
 
 ![](https://github.com/Asynfur/Game-R3M4K3R/blob/glitch/assests/poke%20image.png)
 
+## Settings
+
+- Configurate `.env` file and host the bot in you host ;D
+```
+# Your discord bot token
+TOKEN=
+KAPI=
+WHSECRET=
+WEEZ=
+clientsecret=
+OSUAPI=
+NANITE=
+```
+
+## Bugs / Suggestions
+
 Any questions, bug, or report to the bot, can be reported on our official server below. Thank you very much for using Game R3M4K3!
 
 Enjoy our BOT and [Support Server](https://discord.gg/PpvyCYX)
